@@ -193,7 +193,7 @@ class LabAssistant(object):
         final_config = dict(preset or {})
         # the fallback parameter is needed to fit the interface of a
         # ConfigScope, but here it is not supported.
-        assert not fallback, "{}".format(fallback)
+        #assert not fallback, "{}".format(fallback)
         # ensure we have a search space definition
         if self.current_search_space is None:
             raise ValueError("LabAssistant search_space_wrapper called but "
